@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+  
 
     // Get ahold of some villains, for the table
     // This is an array of Villain instances
@@ -21,7 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("VillainCell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("VillainCell") as UITableViewCell!
         let villain = self.allVillains[indexPath.row]
 
         // Set the name and image
