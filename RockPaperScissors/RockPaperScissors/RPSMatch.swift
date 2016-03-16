@@ -20,6 +20,7 @@ struct RPSMatch {
     init(_ p1: RPS, _ p2: RPS) {
         self.p1 = p1
         self.p2 = p2
+      
     }
     
     var winner: RPS {

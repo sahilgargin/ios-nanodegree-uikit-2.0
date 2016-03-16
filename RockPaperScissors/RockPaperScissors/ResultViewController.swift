@@ -43,7 +43,7 @@ class ResultViewController: UIViewController {
     }
     
     func messageForMatch(match: RPSMatch) -> String {
-        
+      
         // Handle the tie
         if match.p1 == match.p2 {
             return "It's a tie!"
