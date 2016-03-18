@@ -54,6 +54,9 @@ class RootTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         // Get the selected adventure
@@ -67,6 +70,8 @@ class RootTableViewController: UITableViewController {
         
         // Set the story node so that we will see the start of the story
         storyNodeController.storyNode = firstNodeInTheAdventure
+        
+     
         
         // Push the new controller onto the stack
         self.navigationController!.pushViewController(storyNodeController, animated: true)
